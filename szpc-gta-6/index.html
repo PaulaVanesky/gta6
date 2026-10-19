@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTA VI - Semana do Zero ao Programador Contratado</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Questrial&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU DO TOPO -->
+  <!-- O id="menu" existe para o JavaScript encontrar esta barra e escurecer
+       o fundo dela quando a pessoa rola a página (veja script.js). -->
+  <nav class="menu" id="menu">
+    <div class="menu-conteudo">
+      <a href="#" class="menu-logo">VI</a>
+    </div>
+  </nav>
+
+  <!-- CAPA (a primeira tela, que ocupa o monitor inteiro) -->
+  <header class="capa">
+    <!-- Vídeo de fundo. "muted" e "playsinline" não têm valor: são atributos
+         de liga/desliga. Presentes = ligados. -->
+    <video class="capa-video" src="/szpc-gta-6/assets/lv_0_20261015112237.mp4" muted playsinline preload="auto"></video>
+
+    <div class="capa-conteudo">
+      <!-- Toda página precisa de um <h1>: é o título principal, o mais
+           importante de todos. Aqui o título é a própria arte do jogo, então
+           quem cumpre esse papel para o Google e para leitores de tela é o
+           texto do alt="" da imagem. -->
+      <h1 class="capa-moldura">
+
+      <!-- PRECISA MUDAR O FORMATO DA FOTO -->
+
+        <img src="/szpc-gta-6/assets/file_000000003e64820e957ec7a43e3d6c2b (1).png" alt=""style="width: 700px; height: 400px;">
+      </h1>
+    </div>
+
+    <div class="capa-barra">
+      <div class="capa-barra-conteudo">
+        <div class="capa-lancamento">
+          <!-- "rotulo" é aquele textinho pequeno e maiúsculo que fica em cima
+               do título. Designers chamam de "eyebrow" (sobrancelha). Não é
+               tag do HTML: é só um nome de classe que a gente escolheu. -->
+          <p class="capa-rotulo">Lançamento</p>
+          <p class="capa-data">19 de Novembro de 2026</p>
+        </div>
+
+        <!-- TODO: quando a seção de reserva existir, trocar por href="#reserva".
+             Por enquanto "#" é o link vazio, usado como provisório. -->
+        <a href="#" class="botao botao-primario">Reserve agora</a>
+
+        <div class="capa-plataformas">
+          <p class="capa-rotulo">Disponível em</p>
+          <div class="lista-plataformas">
+            <span class="texto-plataforma">PS5 · Xbox Series X|S</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Setinha no rodapé da capa, convidando a rolar a página -->
+    <!-- É um PNG com fundo transparente, então ele se encaixa em cima do
+         vídeo sem aparecer nenhum quadrado branco atrás.
+         O alt="" vazio é de propósito: a seta é enfeite, não passa
+         informação, então leitores de tela devem pular ela. -->
+    <div class="capa-seta">
+      <img src="assets/seta-baixo.png" alt="" class="seta-baixo" width="24" height="24">
+    </div>
+  </header>
+
+  <main>
+    <!-- História -->
+    <section class="secao-historia">
+      <!-- A classe "aparecer" deixa o bloco invisível no começo. O JavaScript
+           avisa quando ele entra na tela e aí o CSS faz aparecer subindo. -->
+      <div class="conteudo-central aparecer">
+        <p class="rotulo">Técnologia e inovação</p>
+        <h2 class="historia-titulo">SENAI, MAFRA.</h2>
+        <div class="historia-texto">
+          <p>
+            A gente sempre soube que o futuro não ia esperar por ninguém. No senai,
+            você entra no jogo com as ferramentas certas: código, tecnologia e prática de verdade.
+            Sem enrolação, direto ao ponto. Aqui você aprende a encarar os desafios do mercado e 
+            construir eu próprio caminho
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vídeo: card com a imagem de fundo e o texto por cima -->
+    <section class="secao-video">
+      <div class="conteudo-central aparecer">
+        <article class="card-video">
+          <div class="card-video-conteudo">
+            <p class="rotulo">Estrutura</p>
+            <h2 class="card-video-titulo">Laboratórios e Oficinas</h2>
+            <p class="card-video-descricao">Prepare-se para as profissões mais procuradas do mercado com quem
+              é referência em educação profissional e inovação
+            </p>
+            <!-- O alt="" é vazio porque o ícone só repete o que o texto
+                 "Ver agora" já diz — não precisa ser lido duas vezes. -->
+            <a href="#" class="botao botao-primario card-video-botao">
+              <img src="/szpc-gta-6/assets/icone-play.png" alt="" class="icone-play" width="18" height="18">
+              Ver agora
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="conteudo-central rodape-conteudo">
+      <div class="rodape-logo">GTA VI</div>
+
+      <nav class="rodape-links">
+        <a href="#">Corporativo</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Configurações de cookie</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Jurídico</a>
+        <a href="#">Não vender nem compartilhar as minhas informações pessoais</a>
+      </nav>
+
+      <div class="rodape-redes">
+        <a href="#" aria-label="YouTube" class="rede-social">YT</a>
+        <a href="#" aria-label="Instagram" class="rede-social">IG</a>
+        <a href="#" aria-label="X / Twitter" class="rede-social">X</a>
+      </div>
+
+      <p class="rodape-classificacao">
+        Pode incluir conteúdo inapropriado para crianças. Acesse
+        <a href="https://www.gov.br" target="_blank" rel="noopener">gov.br</a> para ver informações da classificação indicativa.
+      </p>
+      <p class="rodape-direitos">&copy; 2026 Rockstar Games, Inc. GTA VI, Grand Theft Auto e marcas registradas são propriedade da Take-Two Interactive Software.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
