@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Questrial&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Questrial&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="url-to-cdn/splide.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- MENU DO TOPO -->
@@ -34,9 +38,9 @@
            texto do alt="" da imagem. -->
       <h1 class="capa-moldura">
 
-      <!-- PRECISA MUDAR O FORMATO DA FOTO -->
+        <!-- PRECISA MUDAR O FORMATO DA FOTO -->
 
-        <img src="./assets/img1.png" alt=""style="width: 700px; height: 400px;">
+        <img src="./assets/img1.png" alt="" style="width: 700px; height: 400px;">
       </h1>
     </div>
 
@@ -85,7 +89,7 @@
           <p>
             A gente sempre soube que o futuro não ia esperar por ninguém. No senai,
             você entra no jogo com as ferramentas certas: código, tecnologia e prática de verdade.
-            Sem enrolação, direto ao ponto. Aqui você aprende a encarar os desafios do mercado e 
+            Sem enrolação, direto ao ponto. Aqui você aprende a encarar os desafios do mercado e
             construir eu próprio caminho
 
           </p>
@@ -113,6 +117,14 @@
         </article>
       </div>
     </section>
+
+    <section class="splide" aria-label="Nossa equipe" id="equipe" >
+      <div class="splide__track" id="carrossel">
+        <ul class="splide__list" id="lista-imagens">
+          
+        </ul>
+      </div>
+    </section>
   </main>
 
   <!-- RODAPÉ -->
@@ -132,15 +144,19 @@
       <div class="rodape-redes">
         <a href="https://www.youtube.com/senaibr" aria-label="YouTube" class="rede-social">YT</a>
         <a href="https://www.instagram.com/sesisenai.mafra/" aria-label="Instagram" class="rede-social"">IG</a>
-        <a href="https://x.com/senainacional" aria-label="X / Twitter" class="rede-social">X</a>
+        <a href=" https://x.com/senainacional" aria-label="X / Twitter" class="rede-social">X</a>
       </div>
 
-      <p class="rodape-direitos">&copy; 2026 Rockstar Games, Inc. GTA VI, Grand Theft Auto e marcas registradas são propriedade da Take-Two Interactive Software.</p>
+      <p class="rodape-direitos">&copy; 2026 Rockstar Games, Inc. GTA VI, Grand Theft Auto e marcas registradas são
+        propriedade da Take-Two Interactive Software.</p>
     </div>
   </footer>
 
+  <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <script type="module" src="script.js"></script>
 </body>
+
 </html>

@@ -388,6 +388,14 @@ body {
   height: 18px;
 }
 
+
+/* carrossel */
+
+.splide__slide img {
+  height: 500px;
+}
+
+
 /* Rodapé */
 .rodape {
   background-color: var(--bg-dark);

@@ -370,3 +370,34 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   requestAnimationFrame(jumpToTop);
 });
+
+
+/// CARROSSEL 
+
+const arrayImages = []
+
+for(let i = 0; i <= 34; i++){
+  arrayImages.push(`./assets/imgs/senai-${i}.png`)
+} 
+
+const listaImagem = document.querySelector("#lista-imagens")
+
+console.log(arrayImages)
+
+listaImagem.innerHTML = ""
+
+arrayImages.forEach((imagem)=>{
+   
+  const item = document.createElement("li")
+  item.classList.add("splide__slide","imagem-carrossel")
+  item.innerHTML = `<img src="${imagem}"> </img>`
+  listaImagem.appendChild(item)
+})
+
+var splide = new Splide( '.splide', {
+  type   : 'loop',
+  drag   : 'free',
+  perPage: 3,
+} );
+
+splide.mount();
