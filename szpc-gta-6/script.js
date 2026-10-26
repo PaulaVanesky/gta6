@@ -371,12 +371,31 @@ document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(jumpToTop);
 });
 
+// MODAL
+
+const modal = document.querySelector("#modal")
+const btnAbrirModal = document.querySelector("#btn-abrir-modal")
+const btnFechar = document.querySelector("#btn-fechar")
+
+
+// ABRIR
+
+btnAbrirModal.addEventListener("click", function(){
+    modal.classList.remove("oculto")
+})
+
+//FECHAR
+
+btnFechar.addEventListener("click", function(){
+    modal.classList.add("oculto")
+})
+
 
 /// CARROSSEL 
 
 const arrayImages = []
 
-for(let i = 0; i <= 34; i++){
+for(let i = 0; i <= 30; i++){
   arrayImages.push(`./assets/imgs/senai-${i}.png`)
 } 
 
@@ -397,7 +416,10 @@ arrayImages.forEach((imagem)=>{
 var splide = new Splide( '.splide', {
   type   : 'loop',
   drag   : 'free',
+  snap   : true,
   perPage: 3,
 } );
 
 splide.mount();
+
+
