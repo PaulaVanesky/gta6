@@ -371,25 +371,6 @@ document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(jumpToTop);
 });
 
-// MODAL
-
-const modal = document.querySelector("#modal")
-const btnAbrirModal = document.querySelector("#btn-abrir-modal")
-const btnFechar = document.querySelector("#btn-fechar")
-
-
-// ABRIR
-
-btnAbrirModal.addEventListener("click", function(){
-    modal.classList.remove("oculto")
-})
-
-//FECHAR
-
-btnFechar.addEventListener("click", function(){
-    modal.classList.add("oculto")
-})
-
 
 /// CARROSSEL 
 
