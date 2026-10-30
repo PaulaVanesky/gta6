@@ -102,7 +102,7 @@ function setupReveal() {
    UTILITÁRIO: SCRUB DE VÍDEO COM MOMENTUM (EASE OUT)
    Ao parar o scroll, o vídeo continua um pouco e desacelera organicamente.
    ======================================================================== */
-const VIDEO_FPS = 30;
+const VIDEO_FPS = 60;
 const FRAME_TIME = 1 / VIDEO_FPS;
 
 let isPageScrolling = false;
@@ -143,8 +143,8 @@ function applyVideoTime(video, time, force = false) {
 function createMomentumVideoScrubber(video, options = {}) {
   const {
     invert = false,
-    scrollLerp = 0.42,
-    friction = 0.9,
+    scrollLerp = 0.1,
+    friction = 0.85,
     momentumScale = 0.38,
     maxVelocity = 2.8
   } = options;
@@ -402,5 +402,3 @@ var splide = new Splide( '.splide', {
 } );
 
 splide.mount();
-
-
